@@ -1,0 +1,686 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ITEC442 E-Portofolio</title>
+		<link rel="shortcut icon" href="https://www.emu.edu.tr/favicon.ico">
+		<link rel="icon" href="https://www.emu.edu.tr/favicon.ico" type="image/x-icon">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>CYBERSECURITY</h1>
+								<div class="flex flex-grow flex-col gap-3">
+									<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+										<div class="markdown prose w-full break-words dark:prose-invert light">
+											<a href="https://text.npr.org/985439655">
+											Solar Winds</a> are streams of 
+											charged particles that are ejected 
+											from the upper atmosphere of the 
+											Sun. They consist of electrons, 
+											protons, and other ions that are 
+											expelled from the Sun at high 
+											speeds, typically around 400 km/s. 
+											Solar winds are a natural phenomenon 
+											that occurs continuously, but their 
+											intensity can vary over time. During 
+											periods of increased solar activity, 
+											such as during solar flares and 
+											coronal mass ejections, the solar 
+											wind can be more intense.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#scan">scan</a></li>
+								<li><a href="#dos">DOS ATTACK</a></li>
+								<li><a href="#honeypot">HONEYPOT</a></li>
+								<li><a href="#port">port</a></li>
+								<li><a href="#mitm">MITM</a></li>
+								<li><a href="#cyber">cyber kill chain</a> </li>
+								<li><a href="#kali">kali linux</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="scan">
+								<h2 class="major">SCANNING ACTIVITY</h2>
+								<header class="page-header" style="box-sizing: border-box; display: block; padding-bottom: 0px; margin: 0px; border-bottom: none; text-align: left; color: rgb(102, 102, 102); font-family: Arial, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></header>
+						<p><b>Using ping test on Microsoft Windows</b></p>
+						<p>To use the ping program on Microsoft Windows, follow 
+						these steps: Interpret the output from tracert: Tracert 
+						displays each hop, indicated by a number in the left 
+						column. It also displays the domain and IP address at 
+						each hop, as well as the time spent. For example, the 
+						following output shows the path to an A2 Hosting server:</p>
+						<p>
+						<img border="0" src="images/ping%20scan.png" width="743" height="412">
+						</p>
+								<p>Interpret the output from ping: If the remote 
+								host is active and configured to respond to ping 
+								requests, responses appear. For example, the 
+								following output shows ping responses from an A2 
+								Hosting server:<br>
+								<br>
+								C:\Users\asus&gt; ping www.emu.edu.tr<br>
+								<br>
+								Pinging www.emu.edu.tr [193.140.173.247] with 32 
+								bytes of data:<br>
+								<br>
+								Reply from 193.140.173.247: bytes=32 time=8ms 
+								TTL=55 Reply from 193.140.173.247: bytes=32 
+								time=7ms TTL=55 Reply from 193.140.173.247: 
+								bytes=32 time=5ms TTL=55 Reply from 
+								193.140.173.247: bytes=32 time=3ms TTL=55 Ping 
+								statistics for 193.140.173.247: Packets: Sent = 
+								4, Received = 4, Lost = 0 (0% loss), Approximate 
+								round trip times in milli-seconds: Minimum = 
+								3ms, Maximum = 8ms, Average = 5ms</p>
+						<p>&nbsp;</p>
+						<p><b>Using tracert on Microsoft Windows</b></p>
+						<p>On Windows-based systems, use the tracert program to 
+						test the path to a server. To do this, follow these 
+						steps: Open a DOS command window. To do this, click 
+						Start, click Run, type cmd, and then press Enter. At the 
+						command prompt, type the following command. Replace 
+						example.com with the domain that you want to test:</p>
+						<p>
+						<img border="0" src="images/tracert%20scan.png" width="743" height="416"></p>
+								<p>C:\Users\asus&gt;tracert www.emu.edu.tr<br>
+								<br>
+								Tracing route to www.emu.edu.tr 
+								[193.140.173.247]<br>
+								<br>
+								over a maximum of 30 hops: 1 2 ms 4 ms &lt;1 ms 
+								192.168.0.1 2 1 ms &lt;1 ms 14 ms 172.16.172.1 3 10 
+								ms 1 ms 1 ms 10.111.1.1 4 4 ms 1 ms 1 ms 
+								172.16.101.1 5 1 ms 9 ms 1 ms 172.16.2.1 6 3 ms 
+								2 ms 11 ms 172.31.252.5 7 4 ms 4 ms 4 ms 
+								212.156.79.30.static.turktelekom.com.tr 
+								[212.156.79.30] 8 4 ms 3 ms 4 ms 193.140.41.13 9 
+								15 ms 67 ms 30 ms 193.140.41.9 10 11 ms 9 ms 24 
+								ms 193.140.173.247 Trace complete.</p>
+						<p>&nbsp;</p>
+						<p><b>Using nslookup on Microsoft Windows</b></p>
+						<p><span class="markedContent" id="page44R_mcid7">
+						<span style="left: 674.033px; top: 253.778px; font-size: 30.04px; font-family: sans-serif; transform: scaleX(0.998208);" role="presentation" dir="ltr">
+						basic scanning tools such as</span></span><span class="markedContent" id="page44R_mcid8"><span style="left: 1055.63px; top: 253.778px; font-size: 30.04px; font-family: sans-serif;" role="presentation" dir="ltr">
+						</span>
+						<span style="left: 1064.08px; top: 253.778px; font-size: 30.04px; font-family: sans-serif; transform: scaleX(0.997451);" role="presentation" dir="ltr">
+						traceroute,</span></span><span class="markedContent" id="page44R_mcid9"><span style="left: 1207.28px; top: 253.778px; font-size: 30.04px; font-family: sans-serif;" role="presentation" dir="ltr">
+						</span>
+						<span style="left: 1215.68px; top: 253.778px; font-size: 30.04px; font-family: sans-serif; transform: scaleX(0.995407);" role="presentation" dir="ltr">
+						mtr</span></span><span class="markedContent" id="page44R_mcid10"><span style="left: 1257.28px; top: 253.778px; font-size: 30.04px; font-family: sans-serif;" role="presentation" dir="ltr">,</span></span><span class="markedContent" id="page44R_mcid11"><br role="presentation">
+						<span style="left: 674.033px; top: 289.841px; font-size: 30px; font-family: sans-serif; transform: scaleX(0.99592);" role="presentation" dir="ltr">
+						dig</span></span><span class="markedContent" id="page44R_mcid12"><span style="left: 713.833px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">,</span></span><span class="markedContent" id="page44R_mcid13"><span style="left: 722.173px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">
+						</span>
+						<span style="left: 730.633px; top: 289.841px; font-size: 30px; font-family: sans-serif; transform: scaleX(0.997307);" role="presentation" dir="ltr">
+						nslookup</span></span><span class="markedContent" id="page44R_mcid14"><span style="left: 850.233px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">,</span></span><span class="markedContent" id="page44R_mcid15"><span style="left: 858.573px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">
+						</span>
+						<span style="left: 867.433px; top: 289.841px; font-size: 30px; font-family: sans-serif; transform: scaleX(0.999348);" role="presentation" dir="ltr">
+						whois</span></span><span class="markedContent" id="page44R_mcid16"><span style="left: 944.033px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">,</span></span><span class="markedContent" id="page44R_mcid17"><span style="left: 952.373px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">
+						</span>
+						<span style="left: 960.633px; top: 289.841px; font-size: 30px; font-family: sans-serif; transform: scaleX(0.996357);" role="presentation" dir="ltr">
+						nmap</span></span><span class="markedContent" id="page44R_mcid18"><span style="left: 1035.39px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">
+						</span>
+						<span style="left: 1044.08px; top: 289.841px; font-size: 30px; font-family: sans-serif; transform: scaleX(0.996603);" role="presentation" dir="ltr">
+						and</span></span><span class="markedContent" id="page44R_mcid19"><span style="left: 1093.96px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">
+						</span>
+						<span style="left: 1102.48px; top: 289.841px; font-size: 30px; font-family: sans-serif; transform: scaleX(0.997911);" role="presentation" dir="ltr">
+						telnet</span></span><span class="markedContent" id="page44R_mcid20"><span style="left: 1175.71px; top: 289.841px; font-size: 30px; font-family: sans-serif;" role="presentation" dir="ltr">
+						</span>
+						<span style="left: 1184.08px; top: 289.841px; font-size: 30px; font-family: sans-serif; transform: scaleX(0.998678);" role="presentation" dir="ltr">
+						to extract useful</span></span><span class="markedContent" id="page44R_mcid21"><br role="presentation">
+						<span style="left: 674.033px; top: 325.041px; font-size: 30px; font-family: sans-serif; transform: scaleX(0.998107);" role="presentation" dir="ltr">
+						information.</span></span></p>
+						<p>
+						<img border="0" src="images/nslookup%20scan.png" width="748" height="425"></p>
+						<p>&nbsp;</p>
+							</article>
+
+						<!-- dos -->
+								<article id="dos">
+								<h2 class="major">DOS ATTACK</h2>
+						<p class="major"><b>How does Dos Attacks happens? </b>
+						</p>
+								<img border="0" src="images/dos%20attackemu.png" width="767" height="437">
+								<div class="flex flex-grow flex-col gap-3">
+									<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+										<div class="markdown prose w-full break-words dark:prose-invert light">
+											A Denial of Service (DoS) attack is 
+											a type of cyber attack in which a 
+											malicious actor seeks to make a 
+											network or computer resource 
+											unavailable to its intended users. 
+											This is typically accomplished by 
+											flooding the target with traffic or 
+											requests for connections, 
+											overwhelming the resources of the 
+											network or server and making it 
+											unable to respond to legitimate 
+											requests.<p>There are several 
+									methods that can be used to carry out a DoS 
+									attack. Some of the most common include:</p>
+									<ol>
+										<li>Ping flood: This involves sending a 
+										large number of ping requests to a 
+										target, with the goal of overloading the 
+										server and making it unable to respond 
+										to legitimate requests.</li>
+										<li>SYN flood: This type of attack 
+										involves sending a large number of SYN 
+										requests (a type of packet used to 
+										initiate a TCP connection) to a target, 
+										with the goal of exhausting the target's 
+										resources and making it unable to 
+										respond to legitimate requests.</li>
+										<li>HTTP flood: This involves sending a 
+										large number of HTTP requests to a 
+										target, with the goal of overwhelming 
+										the server and making it unable to 
+										respond to legitimate requests.</li>
+										<li>DDoS attack: A Distributed Denial of 
+										Service (DDoS) attack involves using a 
+										network of compromised computers (called 
+										a &quot;botnet&quot;) to flood a target with 
+										traffic. This type of attack is 
+										particularly difficult to defend 
+										against, as it can involve traffic from 
+										many different sources.</li>
+									</ol>
+									<p>It is important to note that DoS attacks 
+									can be difficult to defend against, as they 
+									often involve a large volume of traffic and 
+									can be difficult to trace to their source. 
+									However, there are a number of measures that 
+									organizations can take to protect against 
+									DoS attacks, such as implementing network 
+									firewalls and load balancers, and using rate 
+									limiting and traffic filtering techniques.</p>
+									<p>&nbsp;</p>
+									<p>
+									<a href="https://files.fm/u/xgjmm5z9q#/view/9d5zt9rug">
+									<font color="#FFFF00">Click here.</font></a></p>
+									<p>To see how it works.</div>
+							</div>
+						</div>
+								<p>&nbsp;</p>
+							</article>
+
+						<!-- mitm -->
+							<article id="mitm">
+								<h2 class="major">MAN IN THE MIDDLE</h2>
+						<div class="flex flex-grow flex-col gap-3">
+							<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+								<div class="markdown prose w-full break-words dark:prose-invert light">
+									A man-in-the-middle (MITM) attack is a type 
+									of cyber attack where an attacker intercepts 
+									and manipulates communication between two 
+									parties who believe they are communicating 
+									directly with each other. In an MITM attack, 
+									the attacker is able to &quot;sit in the middle&quot; 
+									of the communication and can alter, 
+									intercept, or block messages between the two 
+									parties.<p>MITM attacks can take many forms 
+									and can be difficult to detect, as the two 
+									parties may not realize that their 
+									communication has been compromised. Common 
+									techniques used in MITM attacks include 
+									interception of unencrypted communication, 
+									the use of spoofed IP addresses, and the use 
+									of malicious software or hardware to 
+									intercept communication.</p>
+									<p>MITM attacks can be highly successful, as 
+									they allow the attacker to gain access to 
+									sensitive information and potentially 
+									compromise the security of the two parties 
+									involved in the communication. It is 
+									important for individuals and organizations 
+									to be aware of the risks associated with 
+									MITM attacks and to take steps to protect 
+									themselves, such as by using encryption and 
+									implementing strong security measures.</p></div>
+								<p>
+									<br/>
+									<iframe src="https://www.youtube.com/embed/p4pLVN_hVsU?autoplay=1&fs=1&mute=1" width="760" height="515" title="Man-in-the-Middle Attacks - CompTIA Security+ SY0-401: 3.2" frameborder="0"></iframe>
+							</div>
+						</div>
+&nbsp;</article><!-- honeypot --><article id="honeypot"><h2 class="major">HONEY-POT</h2>
+								<img border="0" src="https://miro.medium.com/max/1400/0*ku446KG7BuG2GSHZ.png" width="763" height="362">
+								<div class="flex flex-grow flex-col gap-3">
+									<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+										<div class="markdown prose w-full break-words dark:prose-invert light">
+											A honeypot is a security tool that 
+											is used to detect and defend against 
+											cyber attacks. It is essentially a 
+											trap set up to lure in attackers, in 
+											the hope that they will reveal 
+											themselves and their tactics while 
+											interacting with the honeypot.<p>
+											There are different types of 
+											honeypots, ranging from 
+											low-interaction honeypots that are 
+											designed to collect information 
+											about potential attackers and their 
+											tactics, to high-interaction 
+											honeypots that are designed to 
+											closely mimic a real network or 
+											system and capture as much 
+											information as possible about the 
+											attackers and their methods.</p>
+									<p>Honeypots are often used as part of a 
+									larger security strategy, as they can help 
+									organizations to detect and defend against 
+									attacks, gather intelligence about potential 
+									threats, and understand the tactics and 
+									motivations of attackers. They can also be 
+									used to distract attackers and divert their 
+									attention away from more valuable resources.</p>
+									<p>One important thing to note about 
+									honeypots is that they should not be used as 
+									the primary means of protecting a network or 
+									system. They should be used in conjunction 
+									with other security measures, such as 
+									firewalls and intrusion detection systems, 
+									in order to provide a comprehensive security 
+									solution.</p>
+									<p>&nbsp;</p>
+									<p>
+									<a href="https://files.fm/u/ppy4mb3y7#/view/rzdy5345t">
+									<font color="#FFFF00">Click here.</font></a></p>
+									<p>To see how it works.</div>
+							</div>
+						</div>
+								<p>&nbsp;</p>
+							</article>
+
+							<!-- port -->
+							<article id="port">
+								<h2 class="major">PORT SCAN</h2>
+						<div class="flex flex-grow flex-col gap-3">
+							<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+								<div class="markdown prose w-full break-words dark:prose-invert light">
+									<p style="text-align:justify">Nmap is a 
+									security auditing tool used in the security 
+									field to actively enumerate a target 
+									system/network. It is one of the most 
+									extensively used tools by network 
+									administrators and conversely attackers for 
+									reconnaissance (enumeration), the first step 
+									in the 5 phases of hacking. Nmap is used to 
+									actively probe the target network for active 
+									hosts(host discovery), port scanning, OS 
+									detection, version details, and active 
+									services running on the hosts that are up. 
+									For this, Nmap uses the technique of sending 
+									packets and analyzing the responses. To 
+									learn more about please refer to the article
+									<a href="https://www.geeksforgeeks.org/nmap-scans-for-cyber-security-and-penetration-testing/">
+									Nmap</a>.</p>
+									<p style="text-align:justify">Port Scanning 
+									is one of the features of Nmap wherein the 
+									tool detects the status of the ports on 
+									active hosts in a network. The status of the 
+									ports can be open, filtered, or closed. Type 
+									Nmap in the command line to run Nmap. Add 
+									necessary switches according to the scanning 
+									type to initiate a specific scan technique.&nbsp;</p>
+									<blockquote>
+										<p style="text-align:justify">Example: 
+										nmap -sS 192.168.0.1-192.168.0.52 &nbsp;</p>
+									</blockquote>
+									<p style="text-align:justify">This command 
+									runs Nmap in TCP SYN scan type (-sS) and 
+									scans the given IP address range for active 
+									hosts and services.</p>
+									<p style="text-align:justify">Please refer 
+									to the article
+									<a href="https://www.geeksforgeeks.org/port-scan-in-ethical-hacking/">
+									Port Scanningg</a> to learn more about it.</p>
+									<h3 style="text-align:justify"><strong>Types 
+									of Port Status:</strong></h3>
+									<ul>
+										<li style="text-align:justify"><strong>
+										Open</strong>: The open status means 
+										that the given port is open and is 
+										actively running a service.</li>
+										<li style="text-align:justify"><strong>
+										Filtered</strong>: The filtered status 
+										means that the respective port might be 
+										hidden behind a firewall and its status 
+										remains unknown.</li>
+										<li style="text-align:justify"><strong>
+										Closed</strong>: The closed state 
+										represents a given port is closed on the 
+										host machine.</li>
+									</ul>
+									<h3 style="text-align:justify"><strong>
+									Different Port Scanning Techniques in Nmap</strong>:</h3>
+									<p style="text-align:justify">The following 
+									are the extensively used scanning techniques 
+									in Nmap:&nbsp;</p>
+									<p style="text-align:justify"><strong>1. TCP 
+									Connect Scan</strong> <strong>(-sT)</strong>: 
+									TCP Connect scan uses the concept of a full
+									<a href="https://www.geeksforgeeks.org/tcp-3-way-handshake-process/">
+									three-way handshake</a to discover whether 
+									a given port is open, filtered, or closed 
+									according to the response it receives. Nmap 
+									sends a TCP request packet to each and every 
+									port specified and determines the status of 
+									the port by the response it receives. RFC 
+									793 says,</p>
+									<blockquote>
+										<p style="text-align:justify">If the 
+										connection does not exist (CLOSED) then 
+										a reset is sent in response to any 
+										incoming segment except another reset. 
+										&nbsp;In particular, SYNs addressed to a 
+										non-existent connection are rejected by 
+										this means.&nbsp;</p>
+										<p style="text-align:justify">What it 
+										essentially means is that if Nmap sends 
+										a TCP request to a closed port with its 
+										SYN flag set, then it receives a TCP 
+										packet with its RESET FLAG set from the 
+										target server. This tells Nmap that the 
+										specified port is closed.&nbsp;<br>
+										Otherwise, if the port is actually open, 
+										then Nmap receives a response with SYN/ACK 
+										flags set responding to the packet sent 
+										by Nmap with its SYN flag set.&nbsp;<br>
+										The third possibility is that if a port 
+										is filtered, most of the server's 
+										firewalls are configured to just drop 
+										incoming packets. Nmap doesn't receive 
+										any response back. This essentially 
+										means that the given port is running 
+										behind a firewall filtered.</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220704165316/connectss.jpg" alt="Port Scanning by Nmap" width="712" height="411">
+								<p style="text-align:justify"><strong>2. TCP SYN 
+								Scan (-sS)</strong>: SYN scans are often called 
+								&quot;Half-open&quot; or &quot;Stealth&quot; scans. SYN scan works 
+								the same way as TCP Connect scan with closed and 
+								filtered ports i.e receives a RST packet for 
+								closed port and no response for filtered ports. 
+								The only difference is in the way they handle 
+								the open ports. SYN scan sends a response packet 
+								to the server with its RESET FLAG set(but not 
+								ACK which is usually the default in the actual 
+								three-way handshake) after receiving SYN/ACK 
+								from the target server. This is to avoid the 
+								server from continuously making requests to 
+								establish a connection and thereby reduce the 
+								scan time.</p>
+						<p style="text-align:justify">This scan type is referred 
+						to as a stealth scan due to the following advantages:</p>
+						<ul>
+							<li style="text-align:justify">Faster because it 
+							doesn't have to complete the full three-way 
+							handshake.</li>
+							<li style="text-align:justify">Some applications 
+							often log only those connections that are fully 
+							established. So applications listening on open ports 
+							do not log these connections which makes SYN scan 
+							&quot;stealthy&quot;.</li>
+						</ul>
+						<p>
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220704173234/sysscan.png" width="712" height="411"></p>
+						<p style="text-align:justify"><strong>3. UDP Scan (-sU):
+						</strong>UDP unlike TCP, doesn't perform a handshake to 
+						establish a connection before sending data packets to 
+						the target port but rather sends the packets hoping that 
+						the packets would be received by the target port. That 
+						is why UDP connections are often called &quot;stateless&quot;. 
+						This type of connection is more efficient when speed 
+						dwarfs quality, like in video sharing. As there will be 
+						no acknowledgment from the target port whether it has 
+						received the packet, UDP scans become more difficult and 
+						very much slower.&nbsp;</p>
+						<ul>
+							<li style="text-align:justify">When there's no 
+							response from the target port after sending a UDP 
+							packet, it often times means that the port is either 
+							&quot;open&quot; or is running behind a firewall i.e 
+							&quot;filtered&quot; in which case the server would just drop 
+							the packet with no response.</li>
+							<li style="text-align:justify">UDP scan can 
+							effectively identify closed ports as the target UDP 
+							port responds with an ICMP packet with a message 
+							that the port is unreachable.</li>
+						</ul>
+						<p>
+						<img src="https://media.geeksforgeeks.org/wp-content/uploads/20220704181721/udpscan.jpg" width="712" height="411"></p>
+						<p style="text-align:justify">The below scan techniques 
+						are very less likely to be used in real-time but it's 
+						worth learning the principle behind them. They are said 
+						to be even <i>stealthier</i> than the &quot;SYN stealth&quot; 
+						scan.</p>
+						<p style="text-align:justify">For the below scan types, 
+						when a packet is sent to an &quot;open&quot; port, there won't be 
+						any response from the target port which is very similar 
+						to the UDP scan. When the below scan types don't get a 
+						response, they would mark the port as being 
+						open/filtered. As per RFC 793, for malformed packets, 
+						the closed ports on the server are mandated to respond 
+						with an RST TCP packet and no response at all for open 
+						ports.</p>
+						<ul>
+							<li style="text-align:justify"><strong>TCP NULL Scan 
+							(-sN): </strong>NULL scan, as the name implies, 
+							sends a TCP packet with no flags set. If the port is 
+							closed, the host responds with an RST.</li>
+							<li style="text-align:justify"><strong>TCP FIN Scan 
+							(-sF): </strong>FIN scan, rather than sending 
+							completely empty packets, it sends a packet with its 
+							FIN flag set. If the port is closed, the host 
+							responds with an RST.&nbsp;</li>
+							<li style="text-align:justify"><strong>TCP XMAS Scan 
+							(-sX): </strong>XMAS scan, sends a packet with 
+							URG,PSH,FIN flags set. This scan got its name from 
+							the appearance it gives of a Christmas tree when 
+							viewed as a packet capture in Wireshark. If the port 
+							is closed, the host responds with an RST.</li>
+						</ul>
+						<p>
+						<img src="https://martybugs.net/smoothwall/images/putty1.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Smoothwall - Tunnelling VNC over SSH with PuTTY" data-noaft="1" style="width: 426px; height: 435px; margin: 0px;"></p>
+						<div class="flex flex-grow flex-col gap-3">
+							<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+								<div class="markdown prose w-full break-words dark:prose-invert light">
+									PuTTY is a free and open-source terminal 
+									emulator, serial console, and network file 
+									transfer application. It supports several 
+									network protocols, including SSH, Telnet, 
+									and rlogin, and is commonly used to connect 
+									to remote servers and devices for the 
+									purpose of managing and configuring those 
+									systems.<p>PuTTY is available for Windows, 
+									Linux, and MacOS, and can be used to connect 
+									to a variety of network devices, including 
+									routers, switches, firewalls, and servers. 
+									It is a popular choice among system 
+									administrators and network professionals due 
+									to its versatility and wide range of 
+									features, including support for secure 
+									connections, customizable terminal 
+									emulation, and the ability to save and 
+									recall session configurations.</p>
+									<p>In addition to its use as a terminal 
+									emulator,  PuTTY can also be 
+											used as a simple network client for 
+											various network protocols, such as 
+											SCP (Secure Copy) and SFTP (SSH File 
+											Transfer Protocol), allowing users 
+											to transfer files between systems 
+											over a network connection.</p>
+									<p>
+									<a href="https://files.fm/u/en38t5rsg#/view/9hfpnygyq">
+									<font color="#FFFF00">Learn more</font></a> 
+									about PuTTY and Port scans</div>
+								</div>
+							</div>
+							</article>
+							
+										<!-- cyber -->
+							<article id="cyber">
+								<h2 class="major">CYBER KILL CHAIN</h2>
+								<img src="https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/photo/cyber/THE-CYBER-KILL-CHAIN-body.png.pc-adaptive.1920.medium.png" alt="https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/photo/cyber/THE-CYBER-KILL-CHAIN-body.png.pc-adaptive.1920.medium.png" class="transparent overflowingVertical" width="725" height="842">
+								<div class="flex flex-grow flex-col gap-3">
+									<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+										<div class="markdown prose w-full break-words dark:prose-invert light">
+											The cyber kill chain is a model that 
+											describes the stages of a cyber 
+											attack, from the initial 
+											infiltration of a target system to 
+											the exfiltration of sensitive data. 
+											The cyber kill chain was developed 
+											by Lockheed Martin and is used as a 
+											framework for understanding and 
+											defending against cyber attacks.<p>
+											The seven stages of the cyber kill 
+											chain are:</p>
+											<ol>
+												<li>Reconnaissance: The attacker 
+												gathers information about the 
+												target system and its defenses.</li>
+										<li>Weaponization: The attacker creates 
+										a payload (e.g., malware or ransomware) 
+										to deliver to the target system.</li>
+										<li>Delivery: The payload is delivered 
+										to the target system, often through 
+										phishing or other social engineering 
+										tactics.</li>
+										<li>Exploitation: The payload exploits a 
+										vulnerability in the target system to 
+										gain access.</li>
+										<li>Installation: The payload installs 
+										itself on the target system, often 
+										disguising itself to avoid detection.</li>
+										<li>Command and control: The attacker 
+										establishes a connection to the payload, 
+										allowing them to remotely control the 
+										compromised system.</li>
+										<li>Actions on objectives: The attacker 
+										carries out their objectives (e.g., 
+										exfiltrating data or disrupting 
+										operations).</li>
+									</ol>
+									<p>Understanding the cyber kill chain can 
+									help organizations and individuals identify 
+									the different stages of an attack and take 
+									action to prevent or mitigate the impact of 
+									the attack.</p>
+									<p><b>A 'Worst Nightmare' Cyberattack: The 
+									Untold Story Of The SolarWinds Hack</b></p>
+									<p><a href="https://text.npr.org/985439655">
+									<font color="#FFFF00">Learn More.</font></a>
+									<u>About SolarWinds Hack</u></div>
+							</div>
+						</div>
+								<p>&nbsp;</p>
+							</article>
+							
+											<!-- kali -->
+								<article id="kali">
+								<h2 class="major">Kali Linux</h2>
+								<img src="https://www.bleepstatic.com/content/hl-images/2022/02/14/kali-bright.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Kali Linux 2022.1 released with 6 new tools, SSH wide compat, and more" data-noaft="1" style="width: 742px; height: 411px; margin: 0px"><div class="relative flex w-[calc(100%-50px)] md:flex-col lg:w-[calc(100%-115px)]">
+							<div class="flex flex-grow flex-col gap-3">
+								<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+									<div class="markdown prose w-full break-words dark:prose-invert light">
+										To install Kali Linux with VMware, 
+										follow these steps:<ol>
+											<li>Download the Kali Linux ISO file 
+											from the official Kali Linux
+											<a href="https://www.kali.org/">
+											<font color="#FFFF00">website</font></a>.</li>
+											<li>Download and install
+											<a href="https://www.vmware.com/">
+											<font color="#FFFF00">VMware</font></a> 
+											Workstation on your computer.</li>
+											<li>Launch VMware Workstation and 
+											click &quot;Create a New Virtual 
+											Machine.&quot;</li>
+											<li>Select &quot;Installer disc image 
+											file (iso)&quot; and browse to the Kali 
+											Linux ISO file that you downloaded. 
+											Click &quot;Next.&quot;</li>
+											<li>Enter a name for the virtual 
+											machine and select a location to 
+											store the virtual machine files. 
+											Click &quot;Next.&quot;</li>
+											<li>Select the type and version of 
+											the operating system you are 
+											installing (e.g., &quot;Linux&quot; and &quot;Debian 
+											64-bit&quot;). Click &quot;Next.&quot;</li>
+											<li>Set the amount of memory (RAM) 
+											to allocate to the virtual machine. 
+											It is recommended to allocate at 
+											least 2GB of RAM to Kali Linux. 
+											Click &quot;Next.&quot;</li>
+											<li>Select &quot;Create a new virtual 
+											disk&quot; and choose the size of the 
+											virtual disk. It is recommended to 
+											allocate at least 20GB of space for 
+											Kali Linux. Click &quot;Next.&quot;</li>
+											<li>Review the virtual machine 
+											settings and click &quot;Finish&quot; to 
+											create the virtual machine.</li>
+											<li>Power on the virtual machine and 
+											follow the on-screen instructions to 
+											complete the Kali Linux 
+											installation.</li>
+										</ol>
+										<p>Note: It is recommended to allocate 
+										at least 2 cores and 2GB of RAM to the 
+										virtual machine to ensure adequate 
+										performance.</div>
+								</div>
+							</div>
+						</div>
+						<p>&nbsp;</p>
+						</p>
+							</article>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&nbsp;Copyright &copy; 2023 NASSER 
+						OWAIS</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
